@@ -17,30 +17,41 @@ This repository contains code for fine-tuning a Stable Diffusion 2.1 model using
 | `sd2_1_fine_tuning with lora.ipynb` | Notebook to fine-tune Stable Diffusion 2.1 using LoRA. |
 | `OOTDiffusion_and SD2.1.ipynb` | Notebook to generate virtual try-on results using OOTDiffusion with the fine-tuned model. |
 
+# OOTDiffusion Fine-Tuning and Inference
+
+This repository contains code for fine-tuning a Stable Diffusion 2.1 model using LoRA (Low-Rank Adaptation) and applying it to virtual try-on tasks with **OOTDiffusion**.
+
+## Project Overview
+
+- **Fine-Tuning:**  
+  `sd2_1_fine_tuning with lora.ipynb` — Fine-tunes the Stable Diffusion 2.1 model with LoRA to better adapt to virtual try-on tasks.
+
+- **Inference / Virtual Try-On:**  
+  `OOTDiffusion_and SD2.1.ipynb` — Uses the fine-tuned model with the **OOTDiffusion** framework to perform virtual clothing try-ons.
+
+## Files
+
+| File | Description |
+|:-----|:------------|
+| `sd2_1_fine_tuning with lora.ipynb` | Notebook to fine-tune Stable Diffusion 2.1 using LoRA. |
+| `OOTDiffusion_and SD2.1.ipynb` | Notebook to generate virtual try-on results using OOTDiffusion with the fine-tuned model. |
+
 ## Setup
 
-1. **Clone the repository:**
+Each notebook has its own environment requirements.
 
-    ```bash
-    git clone https://github.com/yourusername/ootdiffusion-finetuning.git
-    cd ootdiffusion-finetuning
-    ```
+- **For fine-tuning (`sd2_1_fine_tuning with lora.ipynb`):**
+  
+  Install the requirements listed inside the notebook or provided alongside it.
 
-2. **Install dependencies:**
+- **For virtual try-on (`OOTDiffusion_and SD2.1.ipynb`):**
+  
+  You need to install two separate sets of dependencies:
+  
+  1. **OOTDiffusion requirements**
+  2. **Stable Diffusion 2.1 requirements**
 
-    Make sure you have a Python environment ready. Recommended Python version: `>=3.9`.
-
-    ```bash
-    pip install -r ootd_requirements.txt
-    pip install -r sd_requirements.txt
-    ```
-
-    > **Note:** You may need additional dependencies for OOTDiffusion and Stable Diffusion 2.1 — please refer to their respective setup guides.
-
-3. **Prepare data:**
-
-    - For fine-tuning: Prepare your dataset in the expected format (refer to the notebook instructions).
-    - For try-on: Prepare source images and clothing images as per OOTDiffusion requirements.
+  These are typically provided as two different `requirements.txt` files.
 
 ## Usage
 
